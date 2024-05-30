@@ -8,5 +8,5 @@ Install dependency localy:
 Run all spec files:
 * ``bundle exec rspec``
 
-Start the game (``<number_of_games>`` is a integer argument):
+Start the game (``<number_of_games>`` is an integer argument):
 * ``ruby ./lib/simulation.rb <number_of_games>``
