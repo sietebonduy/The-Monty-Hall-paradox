@@ -15,9 +15,9 @@ module TheMontyHallParadox
       number_of_games.to_i.times do
         doors = get_doors
 
-        current_door = Player.select_door(doors)
+        current_door = Player.select_door
         opened_door = Presenter.select_door_with_goat(doors, current_door)
-        changed_door = Player.select_another_door(doors, current_door, opened_door)
+        changed_door = Player.select_another_door(current_door, opened_door)
 
         stats.wins_without_changing += 1 if doors[current_door].won
         stats.wins_with_changing += 1 if doors[changed_door].won
