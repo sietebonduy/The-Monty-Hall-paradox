@@ -2,7 +2,7 @@
 
 ### The Monty Hall paradox
 
-Install dependency localy:
+Install dependency locally:
 * ``bundle install``
 
 Run all spec files:
